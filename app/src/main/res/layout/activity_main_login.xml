@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bertucci.pedro.iotbrasil.login.MainLogin">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="90dp">
+
+        <EditText
+            android:id="@+id/edtUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/relativeLayout4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="105dp"
+            android:ems="10"
+            android:hint="Usuario"
+            android:inputType="textPersonName" />
+
+
+        <EditText
+            android:id="@+id/edtSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/edtUser"
+            android:layout_alignLeft="@+id/edtUser"
+            android:layout_alignRight="@+id/edtUser"
+            android:layout_alignStart="@+id/edtUser"
+            android:layout_below="@+id/edtUser"
+            android:layout_marginTop="13dp"
+            android:ems="10"
+            android:hint="Senha"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edtSenha"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="44dp"
+            android:background="@color/colorPrimary"
+            android:text="Entrar"
+            android:textColor="@color/cardview_light_background" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/icone"
+        android:layout_marginTop="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

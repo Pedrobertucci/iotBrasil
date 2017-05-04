@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bertucci.pedro.iotbrasil.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Monitoramento"
+            android:textSize="24sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="57dp">
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/relativeLayout2">
+
+            <ImageView
+                android:id="@+id/imgGetway"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/getway"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/relativeLayout"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentStart="false"
+                android:layout_centerHorizontal="false"
+                android:layout_centerInParent="false"
+                android:layout_centerVertical="false"
+                android:gravity="center"
+                android:text="Getway"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/relativeLayout2"
+            android:layout_toEndOf="@+id/relativeLayout2">
+
+            <ImageView
+                android:id="@+id/imgDevice"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/devices"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imgDevice"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="false"
+                android:layout_centerHorizontal="false"
+                android:layout_centerInParent="false"
+                android:layout_centerVertical="false"
+                android:layout_toEndOf="@+id/imgGetway"
+                android:fadeScrollbars="false"
+                android:gravity="center"
+                android:text="Devices"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_alignTop="@+id/relativeLayout3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:id="@+id/imgRelatorios"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/relatorios" />
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/relativeLayout"
+                android:layout_alignParentBottom="true"
+                android:text="Relatórios"
+                android:gravity="center"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="175dp"
+            android:layout_toEndOf="@+id/relativeLayout2"
+            android:layout_toRightOf="@+id/relativeLayout2"
+            android:id="@+id/relativeLayout3">
+
+            <ImageView
+                android:id="@+id/imgConfig"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/config" />
+
+            <TextView
+                android:id="@+id/txt4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/relativeLayout"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_toEndOf="@+id/imgGetway"
+                android:gravity="center"
+                android:text="Configurações"
+                android:textColor="@android:color/background_dark"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtLinkSite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:text="w w w . i o t b r a s i l . i n d . b r"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+</RelativeLayout>
