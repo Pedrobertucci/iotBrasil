@@ -57,8 +57,7 @@ public class MainGetway extends AppCompatActivity {
 
                 View child = rv.findChildViewUnder(e.getX(), e.getY());
                 if(child != null && gestureDetector.onTouchEvent(e)) {
-                    int position = rv.getChildAdapterPosition(child);
-                    Toast.makeText(getApplicationContext(), (Integer) countries.get(position), Toast.LENGTH_SHORT).show();
+                   //comit efetuado
                 }
 
                 return false;

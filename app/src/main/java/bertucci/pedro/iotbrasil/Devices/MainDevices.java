@@ -57,8 +57,7 @@ public class MainDevices extends AppCompatActivity {
 
                 View child = rv.findChildViewUnder(e.getX(), e.getY());
                 if(child != null && gestureDetector.onTouchEvent(e)) {
-                    int position = rv.getChildAdapterPosition(child);
-                    Toast.makeText(getApplicationContext(), (Integer) countries.get(position), Toast.LENGTH_SHORT).show();
+
                 }
 
                 return false;

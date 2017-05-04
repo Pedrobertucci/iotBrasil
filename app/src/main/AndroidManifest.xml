@@ -20,7 +20,8 @@
         <activity android:name=".configuracoes.MainConfiguracoes" />
         <activity android:name=".Devices.MainDevices" />
         <activity android:name=".Devices.MainPerfilDevice" />
-        <activity android:name=".getway.MainGetway"></activity>
+        <activity android:name=".getway.MainGetway" />
+        <activity android:name=".getway.ProfileGetway"></activity>
     </application>
 
 </manifest>
