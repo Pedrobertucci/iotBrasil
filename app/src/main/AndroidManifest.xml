@@ -23,7 +23,8 @@
         <activity android:name=".getway.MainGetway" />
         <activity android:name=".getway.ProfileGetway" />
         <activity android:name=".Relatorios.MainRelatorios" />
-        <activity android:name=".Relatorios.ProfileRelatorios"></activity>
+        <activity android:name=".Relatorios.ProfileRelatorios" />
+        <activity android:name=".Sms.MainSms"></activity>
     </application>
 
 </manifest>

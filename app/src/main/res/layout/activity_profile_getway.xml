@@ -24,75 +24,75 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true">
 
-        <EditText
-            android:id="@+id/editText5"
+        <Button
+            android:id="@+id/btnTcp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/editText4"
-            android:layout_alignRight="@+id/editText4"
-            android:layout_below="@+id/editText4"
-            android:layout_marginTop="25dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:hint="Canal" />
-
-        <EditText
-            android:id="@+id/editText4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/editText3"
-            android:layout_alignStart="@+id/editText3"
-            android:layout_below="@+id/editText3"
-            android:layout_marginTop="21dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:hint="Device" />
-
-        <EditText
-            android:id="@+id/editText3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/editText2"
-            android:layout_alignStart="@+id/editText2"
-            android:layout_below="@+id/editText2"
-            android:layout_marginTop="17dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:hint="Retorno TCP/IP" />
-
-        <EditText
-            android:id="@+id/editText2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:background="@color/colorPrimary"
+            android:foregroundGravity="bottom"
+            android:text="retorno tcp/ip"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="18sp"
+            android:layout_below="@+id/btnSms"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/editText"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:hint="Retorno SMS" />
-
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/textView5"
-            android:layout_marginTop="23dp"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:hint="Getway 01" />
+            android:layout_alignParentStart="true" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnCanal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
+            android:layout_marginBottom="15dp"
             android:background="@color/colorPrimary"
             android:foregroundGravity="bottom"
-            android:text="Salvar"
-            android:textColor="@color/cardview_light_background" />
+            android:text="CANAL"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnDevice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/btnTcp"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorPrimary"
+            android:foregroundGravity="bottom"
+            android:text="DEVICE"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnSms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:background="@color/colorPrimary"
+            android:foregroundGravity="bottom"
+            android:textSize="18sp"
+            android:text="Retorno SMS"
+            android:textColor="@color/cardview_light_background"
+            android:layout_below="@+id/btnGeteway"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/btnGeteway"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="47dp"
+            android:background="@color/colorPrimary"
+            android:foregroundGravity="bottom"
+            android:text="@string/Geteway"
+            android:textSize="18sp"
+            android:textColor="@color/cardview_light_background"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
     </RelativeLayout>
 
 </RelativeLayout>
