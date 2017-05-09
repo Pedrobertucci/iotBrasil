@@ -1,4 +1,4 @@
-package bertucci.pedro.iotbrasil.Relatorios;
+package bertucci.pedro.iotbrasil.Devices;
 
 import android.content.Context;
 import android.content.Intent;
@@ -13,21 +13,20 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import bertucci.pedro.iotbrasil.MainActivity;
 import bertucci.pedro.iotbrasil.R;
+import bertucci.pedro.iotbrasil.Relatorios.BuscaDevice;
+import bertucci.pedro.iotbrasil.Relatorios.MainRelatorioDevices;
 
-public class MainRelatorioDevices extends AppCompatActivity {
+public class MainAdicionaDevice extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_relatorio_devices);
-
-
-        final ListView listview = (ListView) findViewById(R.id.lista);
+        setContentView(R.layout.activity_main_adiciona_device);
+        final ListView listview = (ListView) findViewById(R.id.listDevices);
         String[] values = new String[] {
-                " 1 | DEVICE 1 | 12/05/2016 08:35",
-                " 2 | DEVICE 2 | 12/05/2016 08:35",
+                " 1 | DEVICE 1 | 12/05/2016 | 08:35",
+                " 2 | DEVICE 2 | 12/05/2016 |08:35",
                 " 3 | DEVICE 3 | 12/05/2016 08:35",
                 " 4 | DEVICE 4 | 12/05/2016 08:35",
                 " 5 | DEVICE 1 | 12/05/2016 08:35",
@@ -61,7 +60,7 @@ public class MainRelatorioDevices extends AppCompatActivity {
         for (int i = 0; i < values.length; ++i) {
             list.add(values[i]);
         }
-        final StableArrayAdapter adapter = new StableArrayAdapter(this,
+        final MainAdicionaDevice.StableArrayAdapter adapter = new MainAdicionaDevice.StableArrayAdapter(this,
                 android.R.layout.simple_list_item_1, list);
         listview.setAdapter(adapter);
 
@@ -70,36 +69,34 @@ public class MainRelatorioDevices extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
 
-                Intent it = new Intent(MainRelatorioDevices.this,BuscaDevice.class);
+                Intent it = new Intent(MainAdicionaDevice.this,BuscaDevice.class);
                 startActivity(it);
             }
         });
-
     }
+        private class StableArrayAdapter extends ArrayAdapter<String> {
 
+            HashMap<String, Integer> mIdMap = new HashMap<String, Integer>();
 
-    private class StableArrayAdapter extends ArrayAdapter<String> {
-
-        HashMap<String, Integer> mIdMap = new HashMap<String, Integer>();
-
-        public StableArrayAdapter(Context context, int textViewResourceId,
-                                  List<String> objects) {
-            super(context, textViewResourceId, objects);
-            for (int i = 0; i < objects.size(); ++i) {
-                mIdMap.put(objects.get(i), i);
+            public StableArrayAdapter(Context context, int textViewResourceId,
+                                      List<String> objects) {
+                super(context, textViewResourceId, objects);
+                for (int i = 0; i < objects.size(); ++i) {
+                    mIdMap.put(objects.get(i), i);
+                }
             }
+
+            @Override
+            public long getItemId(int position) {
+                String item = getItem(position);
+                return mIdMap.get(item);
+            }
+
+            @Override
+            public boolean hasStableIds() {
+                return true;
+            }
+
         }
 
-        @Override
-        public long getItemId(int position) {
-            String item = getItem(position);
-            return mIdMap.get(item);
-        }
-
-        @Override
-        public boolean hasStableIds() {
-            return true;
-        }
-
-    }
 }

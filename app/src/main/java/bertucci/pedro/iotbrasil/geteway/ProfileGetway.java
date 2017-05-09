@@ -7,23 +7,27 @@ import android.view.View;
 import android.widget.Button;
 
 import bertucci.pedro.iotbrasil.Canal.MainCanal;
+import bertucci.pedro.iotbrasil.Devices.MainDevices;
 import bertucci.pedro.iotbrasil.R;
 import bertucci.pedro.iotbrasil.Sms.MainSms;
 import bertucci.pedro.iotbrasil.TpcIp.MainTcp;
 
 public class ProfileGetway extends AppCompatActivity {
 
-    Button btnSms, btnTcp, btnCanal;
+    Button btnSms, btnTcp, btnCanal, btnDevice, btnGeteway;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile_getway);
-        setTitle("Geteway 1");
+        setTitle("Gateway 1");
 
 
         btnSms = (Button) findViewById(R.id.btnSms);
         btnTcp = (Button) findViewById(R.id.btnTcp);
+        btnCanal = (Button) findViewById(R.id.btnCanal);
+        btnGeteway = (Button) findViewById(R.id.btnGeteway);
+        btnDevice= (Button) findViewById(R.id.btnDevice);
 
         btnSms.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,6 +49,20 @@ public class ProfileGetway extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent it = new Intent(ProfileGetway.this,MainCanal.class);
+                startActivity(it);
+            }
+        });
+        btnDevice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(ProfileGetway.this,MainDevices.class);
+                startActivity(it);
+            }
+        });
+        btnGeteway.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(ProfileGetway.this,AlteraGeteway.class);
                 startActivity(it);
             }
         });

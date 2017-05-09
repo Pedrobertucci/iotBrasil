@@ -50,7 +50,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginBottom="12dp"
                 android:gravity="center_horizontal"
-                android:text="Geteway"
+                android:text="Gateway"
                 android:textColor="@android:color/background_dark"
                 android:textSize="18sp" />
 
@@ -157,7 +157,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="14dp"
-        android:text="w w w . i o t b r a s i l . i n d . b r"
+        android:text="@string/linkSite"
         android:textColor="@color/colorPrimary"
         android:textSize="18sp" />
 

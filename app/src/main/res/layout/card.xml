@@ -6,6 +6,7 @@
     android:layout_marginLeft="5dp"
     android:layout_marginRight="5dp"
     android:layout_marginTop="5dp"
+    card_view:cardBackgroundColor="@color/colorPrimary"
     card_view:cardCornerRadius="15dp">
 
     <TextView
@@ -15,6 +16,7 @@
         android:layout_gravity="center"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
+        android:textColor="@color/cardview_light_background"
         android:textSize="18sp"
         android:textStyle="bold" />
 

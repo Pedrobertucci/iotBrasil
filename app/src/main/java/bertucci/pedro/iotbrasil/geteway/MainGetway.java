@@ -34,10 +34,10 @@ public class MainGetway extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(meuLayout);
         countries = new ArrayList<>();
-        countries.add("Geteway 1");
-        countries.add("Geteway 2");
-        countries.add("Geteway 3");
-        countries.add("Geteway 4");
+        countries.add("Gateway 1");
+        countries.add("Gateway 2");
+        countries.add("Gateway 3");
+        countries.add("Gateway 4");
 
         RecyclerView.Adapter adapter = new GetwayAdapter(countries);
         recyclerView.setAdapter(adapter);

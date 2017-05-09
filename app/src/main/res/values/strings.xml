@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">IoT Internet das Coisas - Lora</string>
-    <string name="Geteway">Geteway</string>
+    <string name="app_name">IoT Brasil - Lora</string>
+    <string name="Geteway">Gateway</string>
     <string name="Devices">Devices</string>
+    <string name="linkSite"><a href="http://www.iotbrasil.ind.br/1">http://www.iotbrasil.ind.br/</a></string>
 </resources>
