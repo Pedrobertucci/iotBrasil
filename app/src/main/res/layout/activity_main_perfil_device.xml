@@ -17,10 +17,22 @@
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="20dp"
+        android:layout_height="65dp"
 
-        android:text="Device 1  - ID XX"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView23"
+        android:padding="20dp"
+        android:text="Gateway:   ID: 03 - Nome: TESTE  "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+
+        android:padding="20dp"
+        android:text="Device:   ID: 05 - Nome: TESTE  "
         android:textSize="20sp"
         android:layout_below="@+id/imageView2"
         android:layout_alignParentLeft="true"
@@ -30,13 +42,12 @@
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="17dp"
         android:gravity="center_vertical|fill_vertical|center_horizontal"
         android:text="Data                 Hora"
-        android:textSize="20dp" />
+        android:textSize="20dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
 </RelativeLayout>

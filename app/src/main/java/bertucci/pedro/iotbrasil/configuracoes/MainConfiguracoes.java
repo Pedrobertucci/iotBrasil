@@ -23,7 +23,7 @@ public class MainConfiguracoes extends AppCompatActivity {
 
 
         btnGeteway = (Button) findViewById(R.id.btnGeteway);
-        btnDevices = (Button) findViewById(R.id.btnDevice);
+
         btnGeteway.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -32,12 +32,6 @@ public class MainConfiguracoes extends AppCompatActivity {
             }
         });
 
-        btnDevices.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent it = new Intent(MainConfiguracoes.this,MainAdicionaDevice.class);
-                startActivity(it);
-            }
-        });
+
     }
 }

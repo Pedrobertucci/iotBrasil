@@ -14,7 +14,7 @@ import bertucci.pedro.iotbrasil.TpcIp.MainTcp;
 
 public class ProfileGetway extends AppCompatActivity {
 
-    Button btnSms, btnTcp, btnCanal, btnDevice, btnGeteway;
+    Button btnSms, btnTcp, btnCanal, btnDevice, btnGeteway, btnNumero;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,9 +25,10 @@ public class ProfileGetway extends AppCompatActivity {
 
         btnSms = (Button) findViewById(R.id.btnSms);
         btnTcp = (Button) findViewById(R.id.btnTcp);
-        btnCanal = (Button) findViewById(R.id.btnCanal);
+        btnCanal = (Button) findViewById(R.id.button5);
         btnGeteway = (Button) findViewById(R.id.btnGeteway);
         btnDevice= (Button) findViewById(R.id.btnDevice);
+        btnNumero = (Button) findViewById(R.id.btnNumero);
 
         btnSms.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,6 +64,13 @@ public class ProfileGetway extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent it = new Intent(ProfileGetway.this,AlteraGeteway.class);
+                startActivity(it);
+            }
+        });
+        btnNumero.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(ProfileGetway.this,MainNumeroGateway.class);
                 startActivity(it);
             }
         });

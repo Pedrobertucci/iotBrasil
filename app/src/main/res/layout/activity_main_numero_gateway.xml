@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bertucci.pedro.iotbrasil.geteway.MainNumeroGateway">
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        android:text="GATEWAY 01"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/checkBox7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox4"
+        android:layout_alignStart="@+id/checkBox4"
+        android:layout_below="@+id/checkBox4"
+        android:layout_marginTop="20dp"
+        android:text="GATEWAY 02"
+        android:textSize="20sp"/>
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox7"
+        android:layout_alignStart="@+id/checkBox7"
+        android:layout_below="@+id/checkBox7"
+        android:layout_marginTop="20dp"
+        android:text="GATEWAY 03"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkBox6"
+        android:layout_alignStart="@+id/checkBox6"
+        android:layout_below="@+id/checkBox6"
+        android:layout_marginTop="20dp"
+        android:text="GATEWAY 04"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/butons"
+        android:text="SALVAR / ENVIAR"
+        android:textColor="@color/cardview_light_background"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp" />
+</RelativeLayout>

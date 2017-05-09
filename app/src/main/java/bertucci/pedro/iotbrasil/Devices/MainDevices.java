@@ -28,7 +28,7 @@ public class MainDevices extends AppCompatActivity {
 
     public  void funcoes(){
 
-        lLayout = new GridLayoutManager(getApplicationContext(),2);
+        lLayout = new GridLayoutManager(getApplicationContext(),1);
 
         RecyclerView recyclerView = (RecyclerView)findViewById(R.id.card_recycler_view);
         recyclerView.setHasFixedSize(true);

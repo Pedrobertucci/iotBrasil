@@ -30,7 +30,8 @@
         <activity android:name=".Canal.MainCanal" />
         <activity android:name=".geteway.MainDadosGeteway" />
         <activity android:name=".Relatorios.BuscaDevice" />
-        <activity android:name=".Devices.MainAdicionaDevice"></activity>
+        <activity android:name=".Devices.MainAdicionaDevice" />
+        <activity android:name=".geteway.MainNumeroGateway"></activity>
     </application>
 
 </manifest>
