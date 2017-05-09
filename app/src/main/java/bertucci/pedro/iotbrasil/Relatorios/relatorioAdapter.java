@@ -9,12 +9,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import bertucci.pedro.iotbrasil.R;
-import bertucci.pedro.iotbrasil.configuracoes.AdapterConfigGeteway;
-import bertucci.pedro.iotbrasil.configuracoes.ProfileGeteway;
-
 
 
 /**

@@ -6,13 +6,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import bertucci.pedro.iotbrasil.Canal.MainCanal;
 import bertucci.pedro.iotbrasil.R;
 import bertucci.pedro.iotbrasil.Sms.MainSms;
 import bertucci.pedro.iotbrasil.TpcIp.MainTcp;
 
 public class ProfileGetway extends AppCompatActivity {
 
-    Button btnSms, btnTcp;
+    Button btnSms, btnTcp, btnCanal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +37,14 @@ public class ProfileGetway extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent it = new Intent(ProfileGetway.this,MainTcp.class);
+                startActivity(it);
+            }
+        });
+
+        btnCanal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(ProfileGetway.this,MainCanal.class);
                 startActivity(it);
             }
         });

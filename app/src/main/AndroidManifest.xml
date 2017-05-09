@@ -23,12 +23,12 @@
         <activity android:name=".geteway.MainGetway" />
         <activity android:name=".geteway.ProfileGetway" />
         <activity android:name=".Relatorios.MainRelatorios" />
-        <activity android:name=".configuracoes.ProfileGeteway" />
         <activity android:name=".Sms.MainSms" />
         <activity android:name=".TpcIp.MainTcp" />
         <activity android:name=".Relatorios.MainRelatorioDevices" />
         <activity android:name=".geteway.AlteraGeteway" />
-        <activity android:name=".Canal.MainCanal"></activity>
+        <activity android:name=".Canal.MainCanal" />
+        <activity android:name=".geteway.MainDadosGeteway"></activity>
     </application>
 
 </manifest>

@@ -54,7 +54,7 @@ public class GetwayAdapter extends RecyclerView.Adapter<GetwayAdapter.ViewHolder
             tv_country.setOnClickListener(new View.OnClickListener() {
                 @Override public void onClick(View v) {
                     Context context = v.getContext();
-                    Intent intent = new Intent(context,ProfileGetway.class);
+                    Intent intent = new Intent(context,MainDadosGeteway.class);
                     context.startActivity(intent);
                 }
             });

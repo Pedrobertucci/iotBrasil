@@ -39,25 +39,21 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 app:srcCompat="@drawable/getway"
-                android:layout_centerVertical="true"
+                android:layout_above="@+id/textView12"
                 android:layout_centerHorizontal="true" />
 
             <TextView
-                android:id="@+id/txt1"
+                android:id="@+id/textView12"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/relativeLayout"
                 android:layout_alignParentBottom="true"
-                android:layout_alignParentLeft="false"
-                android:layout_alignParentRight="false"
-                android:layout_alignParentStart="false"
-                android:layout_centerHorizontal="false"
-                android:layout_centerInParent="false"
-                android:layout_centerVertical="false"
-                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="12dp"
+                android:gravity="center_horizontal"
+                android:text="Geteway"
                 android:textColor="@android:color/background_dark"
-                android:textSize="18sp"
-                tools:text="Getway" />
+                android:textSize="18sp" />
+
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="200dp"
@@ -73,26 +69,21 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 app:srcCompat="@drawable/devices"
-                android:layout_centerVertical="true"
+                android:layout_above="@+id/textView13"
                 android:layout_centerHorizontal="true" />
 
             <TextView
-                android:id="@+id/txt2"
+                android:id="@+id/textView13"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/imgDevice"
                 android:layout_alignParentBottom="true"
-                android:layout_alignParentLeft="false"
-                android:layout_alignParentStart="false"
-                android:layout_centerHorizontal="false"
-                android:layout_centerInParent="false"
-                android:layout_centerVertical="false"
-                android:layout_toEndOf="@+id/imgGetway"
-                android:fadeScrollbars="false"
-                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="11dp"
+                android:gravity="center_horizontal"
+                android:text="Devices"
                 android:textColor="@android:color/background_dark"
-                android:textSize="18sp"
-                tools:text="Devices" />
+                android:textSize="18sp" />
+
         </RelativeLayout>
 
         <RelativeLayout
@@ -107,9 +98,9 @@
                 android:id="@+id/imgRelatorios"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/relatorios"
                 android:layout_centerVertical="true"
-                app:srcCompat="@drawable/relatorios" />
+                android:layout_centerHorizontal="true" />
 
             <TextView
                 android:id="@+id/txt3"
@@ -138,9 +129,9 @@
                 android:id="@+id/imgConfig"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
-                android:layout_centerHorizontal="true"
+                app:srcCompat="@drawable/config"
                 android:layout_centerVertical="true"
-                app:srcCompat="@drawable/config" />
+                android:layout_centerHorizontal="true" />
 
             <TextView
                 android:id="@+id/txt4"
