@@ -31,6 +31,7 @@
 
     <Button
         android:id="@+id/btnDevice"
+
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_below="@+id/textView3"
@@ -38,7 +39,12 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="50dp"
         android:background="@color/colorPrimary"
+        android:elevation="1dp"
         android:text="DEVICE"
+        android:bottomRightRadius="10dp"
+        android:bottomLeftRadius="10dp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
         android:textColor="@color/cardview_light_background"
         android:textSize="30sp" />
 

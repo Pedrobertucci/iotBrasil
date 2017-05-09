@@ -1,4 +1,4 @@
-package bertucci.pedro.iotbrasil.getway;
+package bertucci.pedro.iotbrasil.Relatorios;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,32 +7,30 @@ import android.support.v7.widget.RecyclerView;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import bertucci.pedro.iotbrasil.Devices.DevicesAdapter;
 import bertucci.pedro.iotbrasil.R;
+import bertucci.pedro.iotbrasil.getway.GetwayAdapter;
 
-public class MainGetway extends AppCompatActivity {
-
+public class MainRelatorios extends AppCompatActivity {
 
     private ArrayList countries;
     private GridLayoutManager meuLayout;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_getway);
+        setContentView(R.layout.activity_main_relatorios);
         funcoes();
-
     }
 
     public void funcoes(){
 
         meuLayout = new GridLayoutManager(getApplicationContext(),1);
 
-        RecyclerView recyclerView = (RecyclerView)findViewById(R.id.card_recycler_view_getway);
+        RecyclerView recyclerView = (RecyclerView)findViewById(R.id.card_recycler_view_relatorios);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(meuLayout);
         countries = new ArrayList<>();

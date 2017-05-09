@@ -7,12 +7,13 @@ import android.view.View;
 import android.widget.ImageView;
 
 import bertucci.pedro.iotbrasil.Devices.MainDevices;
+import bertucci.pedro.iotbrasil.Relatorios.MainRelatorios;
 import bertucci.pedro.iotbrasil.configuracoes.MainConfiguracoes;
 import bertucci.pedro.iotbrasil.getway.MainGetway;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageView imgConfig, imgDevice,imgGetway;
+    ImageView imgConfig, imgDevice,imgGetway,imgRelatorios;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
         imgConfig = (ImageView) findViewById(R.id.imgConfig);
         imgDevice = (ImageView) findViewById(R.id.imgDevice);
         imgGetway = (ImageView) findViewById(R.id.imgGetway);
+        imgRelatorios = (ImageView) findViewById(R.id.imgRelatorios);
+
 
         imgConfig.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,6 +47,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent it = new Intent(MainActivity.this,MainGetway.class);
+                startActivity(it);
+            }
+        });
+        imgRelatorios.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(MainActivity.this,MainRelatorios.class);
                 startActivity(it);
             }
         });

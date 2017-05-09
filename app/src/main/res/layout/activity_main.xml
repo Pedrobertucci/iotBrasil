@@ -55,9 +55,9 @@
                 android:layout_centerInParent="false"
                 android:layout_centerVertical="false"
                 android:gravity="center"
-                android:text="Getway"
                 android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                tools:text="@string/Geteway" />
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="200dp"
@@ -90,9 +90,9 @@
                 android:layout_toEndOf="@+id/imgGetway"
                 android:fadeScrollbars="false"
                 android:gravity="center"
-                android:text="Devices"
                 android:textColor="@android:color/background_dark"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                tools:text="@string/Devices" />
         </RelativeLayout>
 
         <RelativeLayout

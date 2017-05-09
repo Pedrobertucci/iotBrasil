@@ -21,7 +21,9 @@
         <activity android:name=".Devices.MainDevices" />
         <activity android:name=".Devices.MainPerfilDevice" />
         <activity android:name=".getway.MainGetway" />
-        <activity android:name=".getway.ProfileGetway"></activity>
+        <activity android:name=".getway.ProfileGetway" />
+        <activity android:name=".Relatorios.MainRelatorios" />
+        <activity android:name=".Relatorios.ProfileRelatorios"></activity>
     </application>
 
 </manifest>
