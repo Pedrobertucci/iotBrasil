@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="bertucci.pedro.iotbrasil.getway.ProfileGetway">
+    tools:context="bertucci.pedro.iotbrasil.geteway.ProfileGetway">
 
     <TextView
         android:id="@+id/textView5"
@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="19dp"
-            android:background="@color/colorPrimary"
+            android:background="@drawable/butons"
             android:foregroundGravity="bottom"
             android:text="retorno tcp/ip"
             android:textColor="@color/cardview_light_background"
@@ -46,7 +46,7 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_marginBottom="15dp"
-            android:background="@color/colorPrimary"
+            android:background="@drawable/butons"
             android:foregroundGravity="bottom"
             android:text="CANAL"
             android:textColor="@color/cardview_light_background"
@@ -60,7 +60,7 @@
             android:layout_alignParentStart="true"
             android:layout_below="@+id/btnTcp"
             android:layout_marginTop="20dp"
-            android:background="@color/colorPrimary"
+            android:background="@drawable/butons"
             android:foregroundGravity="bottom"
             android:text="DEVICE"
             android:textColor="@color/cardview_light_background"
@@ -71,7 +71,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="21dp"
-            android:background="@color/colorPrimary"
+            android:background="@drawable/butons"
             android:foregroundGravity="bottom"
             android:textSize="18sp"
             android:text="Retorno SMS"
@@ -85,7 +85,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="47dp"
-            android:background="@color/colorPrimary"
+            android:background="@drawable/butons"
             android:foregroundGravity="bottom"
             android:text="@string/Geteway"
             android:textSize="18sp"

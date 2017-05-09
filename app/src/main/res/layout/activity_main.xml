@@ -57,7 +57,7 @@
                 android:gravity="center"
                 android:textColor="@android:color/background_dark"
                 android:textSize="18sp"
-                tools:text="@string/Geteway" />
+                tools:text="Getway" />
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="200dp"
@@ -92,7 +92,7 @@
                 android:gravity="center"
                 android:textColor="@android:color/background_dark"
                 android:textSize="18sp"
-                tools:text="@string/Devices" />
+                tools:text="Devices" />
         </RelativeLayout>
 
         <RelativeLayout

@@ -11,7 +11,7 @@ import android.view.View;
 import java.util.ArrayList;
 
 import bertucci.pedro.iotbrasil.R;
-import bertucci.pedro.iotbrasil.getway.GetwayAdapter;
+import bertucci.pedro.iotbrasil.geteway.GetwayAdapter;
 
 public class MainRelatorios extends AppCompatActivity {
 
@@ -34,12 +34,12 @@ public class MainRelatorios extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(meuLayout);
         countries = new ArrayList<>();
-        countries.add("Getway 1");
-        countries.add("Getway 2");
-        countries.add("Getway 3");
-        countries.add("Getway 4");
+        countries.add("Geteway 1");
+        countries.add("Geteway 2");
+        countries.add("Geteway 3");
+        countries.add("Geteway 4");
 
-        RecyclerView.Adapter adapter = new GetwayAdapter(countries);
+        RecyclerView.Adapter adapter = new relatorioAdapter(countries);
         recyclerView.setAdapter(adapter);
 
         recyclerView.addOnItemTouchListener(new RecyclerView.OnItemTouchListener() {

@@ -1,4 +1,4 @@
-package bertucci.pedro.iotbrasil.getway;
+package bertucci.pedro.iotbrasil.configuracoes;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,26 +10,24 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-import bertucci.pedro.iotbrasil.Devices.DevicesAdapter;
-import bertucci.pedro.iotbrasil.getway.ProfileGetway;
 import bertucci.pedro.iotbrasil.R;
 
 /**
- * Created by b_ped on 04/05/2017.
+ * Created by b_ped on 08/05/2017.
  */
 
-public class GetwayAdapter extends RecyclerView.Adapter<GetwayAdapter.ViewHolder>{
+public class AdapterConfigGeteway extends RecyclerView.Adapter<AdapterConfigGeteway.ViewHolder> {
 
     private ArrayList<String> countries;
 
-    public GetwayAdapter(ArrayList<String> countries) {
+    public AdapterConfigGeteway(ArrayList<String> countries) {
         this.countries = countries;
     }
 
     @Override
-    public GetwayAdapter.ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
-        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.card_getway, viewGroup, false);
-        return new GetwayAdapter.ViewHolder(view);
+    public AdapterConfigGeteway.ViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
+        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.card_relatorios, viewGroup, false);
+        return new AdapterConfigGeteway.ViewHolder(view);
     }
 
     @Override
@@ -51,17 +49,16 @@ public class GetwayAdapter extends RecyclerView.Adapter<GetwayAdapter.ViewHolder
         public ViewHolder(View view) {
             super(view);
 
-            tv_country = (TextView)view.findViewById(R.id.card_getway);
+            tv_country = (TextView)view.findViewById(R.id.tv_country);
 
             tv_country.setOnClickListener(new View.OnClickListener() {
                 @Override public void onClick(View v) {
                     Context context = v.getContext();
-                    Intent intent = new Intent(context,ProfileGetway.class);
+                    Intent intent = new Intent(context,ProfileGeteway.class);
                     context.startActivity(intent);
                 }
             });
 
         }
     }
-
 }

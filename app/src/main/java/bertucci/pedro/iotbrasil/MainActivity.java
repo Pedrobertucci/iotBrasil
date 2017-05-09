@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import bertucci.pedro.iotbrasil.Devices.MainDevices;
 import bertucci.pedro.iotbrasil.Relatorios.MainRelatorios;
 import bertucci.pedro.iotbrasil.configuracoes.MainConfiguracoes;
-import bertucci.pedro.iotbrasil.getway.MainGetway;
+import bertucci.pedro.iotbrasil.geteway.MainGetway;
 
 public class MainActivity extends AppCompatActivity {
 

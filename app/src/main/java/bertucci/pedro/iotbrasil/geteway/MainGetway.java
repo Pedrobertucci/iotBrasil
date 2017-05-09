@@ -1,4 +1,4 @@
-package bertucci.pedro.iotbrasil.getway;
+package bertucci.pedro.iotbrasil.geteway;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,11 +7,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
-import bertucci.pedro.iotbrasil.Devices.DevicesAdapter;
 import bertucci.pedro.iotbrasil.R;
 
 public class MainGetway extends AppCompatActivity {
@@ -36,10 +34,10 @@ public class MainGetway extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(meuLayout);
         countries = new ArrayList<>();
-        countries.add("Getway 1");
-        countries.add("Getway 2");
-        countries.add("Getway 3");
-        countries.add("Getway 4");
+        countries.add("Geteway 1");
+        countries.add("Geteway 2");
+        countries.add("Geteway 3");
+        countries.add("Geteway 4");
 
         RecyclerView.Adapter adapter = new GetwayAdapter(countries);
         recyclerView.setAdapter(adapter);

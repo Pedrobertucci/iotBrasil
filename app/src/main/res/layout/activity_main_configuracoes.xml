@@ -17,15 +17,15 @@
         android:textSize="24sp" />
 
     <Button
-        android:id="@+id/btnGetway"
+        android:id="@+id/btnGeteway"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_below="@+id/textView3"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="100dp"
         android:layout_marginTop="150dp"
-        android:background="@color/colorPrimary"
-        android:text="GETWAY"
+        android:background="@drawable/butons"
+        android:text="GETEWAY"
         android:textColor="@color/cardview_light_background"
         android:textSize="30sp" />
 
@@ -38,7 +38,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="100dp"
         android:layout_marginTop="50dp"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/butons"
         android:elevation="1dp"
         android:text="DEVICE"
         android:bottomRightRadius="10dp"

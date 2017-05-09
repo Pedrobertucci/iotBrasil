@@ -4,77 +4,54 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="bertucci.pedro.iotbrasil.Sms.MainSms">
+    tools:context="bertucci.pedro.iotbrasil.TpcIp.MainTcp">
 
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="114dp"
         android:gravity="center_vertical"
-        android:text="Retorno SMS 01"
+        android:text="Retorno TCP/IP  01"
         android:textSize="28sp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignLeft="@+id/edtTcp1"
+        android:layout_alignStart="@+id/edtTcp1" />
 
     <CheckBox
         android:id="@+id/checkBox2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
         android:gravity="center_vertical"
-        android:text="Retorno SMS 02"
+        android:text="Retorno TCP/IP  01"
         android:textSize="28sp"
-        android:layout_marginTop="19dp"
         android:layout_below="@+id/edtTcp1"
-        android:layout_alignLeft="@+id/checkBox"
-        android:layout_alignStart="@+id/checkBox" />
-
-    <CheckBox
-        android:id="@+id/checkBox3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/edtTcp2"
-        android:layout_alignStart="@+id/edtTcp2"
-        android:layout_below="@+id/edtTcp2"
-        android:layout_marginTop="23dp"
-        android:gravity="center_vertical"
-        android:text="Retorno SMS 03"
-        android:textSize="28sp" />
+        android:layout_alignLeft="@+id/edtTcp1"
+        android:layout_alignStart="@+id/edtTcp1" />
 
     <EditText
         android:id="@+id/edtTcp2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:ems="11"
-        android:inputType="phone"
+        android:layout_marginTop="18dp"
+        android:ems="13"
+        android:inputType="number"
+        android:maxLength="24"
         android:layout_below="@+id/checkBox2"
-        android:layout_alignRight="@+id/checkBox2"
-        android:layout_alignEnd="@+id/checkBox2"
-        android:maxLength="16"/>
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:id="@+id/edtTcp1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:ems="13"
+        android:inputType="number"
+        android:maxLength="24"
         android:layout_below="@+id/checkBox"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="21dp"
-        android:ems="11"
-        android:inputType="phone"
-        android:maxLength="16"/>
-
-    <EditText
-        android:id="@+id/telefone3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/checkBox3"
-        android:layout_alignRight="@+id/checkBox3"
-        android:layout_below="@+id/checkBox3"
-        android:layout_marginTop="32dp"
-        android:ems="11"
-        android:inputType="phone"
-        android:maxLength="16" />
+        android:layout_alignLeft="@+id/edtTcp2"
+        android:layout_alignStart="@+id/edtTcp2" />
 
     <Button
         android:id="@+id/button2"
@@ -87,5 +64,4 @@
         android:text="SALVAR"
         android:textColor="@color/cardview_light_background"
         android:textSize="18sp" />
-
 </RelativeLayout>
