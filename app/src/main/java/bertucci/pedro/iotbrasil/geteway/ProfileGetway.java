@@ -26,7 +26,7 @@ public class ProfileGetway extends AppCompatActivity {
         btnSms = (Button) findViewById(R.id.btnSms);
         btnTcp = (Button) findViewById(R.id.btnTcp);
         btnCanal = (Button) findViewById(R.id.button5);
-        btnGeteway = (Button) findViewById(R.id.btnGeteway);
+        btnGeteway = (Button) findViewById(R.id.btnGeteway2);
         btnDevice= (Button) findViewById(R.id.btnDevice);
         btnNumero = (Button) findViewById(R.id.btnNumero);
 

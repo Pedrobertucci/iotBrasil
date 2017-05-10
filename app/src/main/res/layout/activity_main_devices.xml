@@ -13,10 +13,9 @@
             android:layout_height="390dp"
             android:layout_gravity="bottom"
             android:scrollbars="vertical"
-            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginTop="134dp" >
+            android:layout_alignParentStart="true">
 
         </android.support.v7.widget.RecyclerView>
 
@@ -24,7 +23,6 @@
             android:id="@+id/imageView5"
             android:layout_width="150dp"
             android:layout_height="100dp"
-            android:layout_marginTop="13dp"
             app:srcCompat="@drawable/logo"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true" />

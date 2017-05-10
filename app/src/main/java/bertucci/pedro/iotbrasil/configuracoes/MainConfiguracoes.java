@@ -6,25 +6,46 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import bertucci.pedro.iotbrasil.Devices.MainAdicionaDevice;
-import bertucci.pedro.iotbrasil.MainActivity;
 import bertucci.pedro.iotbrasil.R;
-import bertucci.pedro.iotbrasil.geteway.MainGetway;
 import bertucci.pedro.iotbrasil.geteway.ProfileGetway;
 
 public class MainConfiguracoes extends AppCompatActivity {
 
 
-    Button btnGeteway, btnDevices;
+    Button btnGateway, btnGateway2,btnGateway3,btnGateway4;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_configuracoes);
 
 
-        btnGeteway = (Button) findViewById(R.id.btnGeteway);
+        btnGateway = (Button) findViewById(R.id.btnGateway1);
+        btnGateway2 = (Button) findViewById(R.id.btnGeteway2);
+        btnGateway3 = (Button) findViewById(R.id.btnGateway3);
+        btnGateway4 = (Button) findViewById(R.id.btnGateway4);
 
-        btnGeteway.setOnClickListener(new View.OnClickListener() {
+        btnGateway.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(MainConfiguracoes.this,ProfileGetway.class);
+                startActivity(it);
+            }
+        });
+        btnGateway2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(MainConfiguracoes.this,ProfileGetway.class);
+                startActivity(it);
+            }
+        });
+        btnGateway3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(MainConfiguracoes.this,ProfileGetway.class);
+                startActivity(it);
+            }
+        });
+        btnGateway4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent it = new Intent(MainConfiguracoes.this,ProfileGetway.class);

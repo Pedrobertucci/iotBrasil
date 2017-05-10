@@ -79,13 +79,13 @@
             android:text="Retorno SMS"
             android:textColor="@color/cardview_light_background"
             android:textSize="18sp"
-            android:layout_below="@+id/btnGeteway"
+            android:layout_below="@+id/btnGeteway2"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_marginTop="20dp" />
 
         <Button
-            android:id="@+id/btnGeteway"
+            android:id="@+id/btnGeteway2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"

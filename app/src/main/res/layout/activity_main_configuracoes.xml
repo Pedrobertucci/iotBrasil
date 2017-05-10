@@ -7,22 +7,22 @@
     tools:context="bertucci.pedro.iotbrasil.configuracoes.MainConfiguracoes">
 
     <Button
-        android:id="@+id/btnGeteway"
+        android:id="@+id/btnGeteway2"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:background="@drawable/butons"
         android:text="GATEWAY 2"
         android:textColor="@color/cardview_light_background"
         android:textSize="30sp"
-        android:layout_below="@+id/button8"
-        android:layout_alignLeft="@+id/button8"
-        android:layout_alignStart="@+id/button8"
+        android:layout_below="@+id/btnGateway1"
+        android:layout_alignLeft="@+id/btnGateway1"
+        android:layout_alignStart="@+id/btnGateway1"
         android:layout_marginTop="32dp"
-        android:layout_alignRight="@+id/button8"
-        android:layout_alignEnd="@+id/button8" />
+        android:layout_alignRight="@+id/btnGateway1"
+        android:layout_alignEnd="@+id/btnGateway1" />
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/btnGateway1"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_below="@+id/textView3"
@@ -35,22 +35,22 @@
         android:textSize="30sp" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/btnGateway4"
         android:layout_width="match_parent"
         android:layout_height="60dp"
+        android:layout_alignEnd="@+id/btnGateway3"
+        android:layout_alignLeft="@+id/btnGateway3"
+        android:layout_alignRight="@+id/btnGateway3"
+        android:layout_alignStart="@+id/btnGateway3"
+        android:layout_below="@+id/btnGateway3"
         android:layout_marginTop="27dp"
         android:background="@drawable/butons"
         android:text="GATEWAY 4"
         android:textColor="@color/cardview_light_background"
-        android:textSize="30sp"
-        android:layout_below="@+id/button6"
-        android:layout_alignLeft="@+id/button6"
-        android:layout_alignStart="@+id/button6"
-        android:layout_alignRight="@+id/button6"
-        android:layout_alignEnd="@+id/button6" />
+        android:textSize="30sp" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/btnGateway3"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginTop="22dp"
@@ -58,11 +58,11 @@
         android:text="GATEWAY 3"
         android:textColor="@color/cardview_light_background"
         android:textSize="30sp"
-        android:layout_below="@+id/btnGeteway"
-        android:layout_alignLeft="@+id/btnGeteway"
-        android:layout_alignStart="@+id/btnGeteway"
-        android:layout_alignRight="@+id/btnGeteway"
-        android:layout_alignEnd="@+id/btnGeteway" />
+        android:layout_below="@+id/btnGeteway2"
+        android:layout_alignLeft="@+id/btnGeteway2"
+        android:layout_alignStart="@+id/btnGeteway2"
+        android:layout_alignRight="@+id/btnGeteway2"
+        android:layout_alignEnd="@+id/btnGeteway2" />
 
     <ImageView
         android:id="@+id/imageView3"
