@@ -10,13 +10,12 @@
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="114dp"
+        android:layout_marginTop="72dp"
         android:gravity="center_vertical"
         android:text="Retorno TCP/IP  01"
         android:textSize="28sp"
-        android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/edtTcp1"
-        android:layout_alignStart="@+id/edtTcp1" />
+        android:layout_below="@+id/textView34"
+        android:layout_centerHorizontal="true" />
 
     <CheckBox
         android:id="@+id/checkBox2"
@@ -34,18 +33,18 @@
         android:id="@+id/edtTcp2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="11dp"
         android:ems="13"
         android:inputType="number"
         android:maxLength="24"
-        android:layout_below="@+id/checkBox2"
+        android:layout_below="@+id/checkBox14"
         android:layout_centerHorizontal="true" />
 
     <EditText
         android:id="@+id/edtTcp1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="17dp"
+        android:layout_marginTop="51dp"
         android:ems="13"
         android:inputType="number"
         android:maxLength="24"
@@ -65,4 +64,38 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
       />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:text="Configurações/Gateway/Configurações/TCP-IP" />
+
+    <CheckBox
+        android:id="@+id/checkBox12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apagar retorno IP 01"
+        android:textSize="24sp"
+        android:layout_below="@+id/checkBox"
+        android:layout_alignLeft="@+id/checkBox"
+        android:layout_alignStart="@+id/checkBox"
+        android:layout_marginTop="12dp"
+        android:layout_alignRight="@+id/edtTcp1"
+        android:layout_alignEnd="@+id/edtTcp1" />
+
+    <CheckBox
+        android:id="@+id/checkBox14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Apagar retorno IP 02"
+        android:textSize="24sp" />
 </RelativeLayout>

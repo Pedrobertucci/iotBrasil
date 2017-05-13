@@ -7,24 +7,33 @@
     tools:context="bertucci.pedro.iotbrasil.Devices.MainDevices">
 
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_above="@+id/card_recycler_view_getway"
-        android:layout_alignParentTop="true"
-        android:layout_centerInParent="true"
-        app:srcCompat="@drawable/logo" />
-
     <android.support.v7.widget.RecyclerView
         android:id="@+id/card_recycler_view_getway"
-        android:layout_width="382dp"
-        android:layout_height="390dp"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_gravity="bottom"
         android:scrollbars="vertical" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="10dp"
+        android:text="Gateway/Gateway" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>

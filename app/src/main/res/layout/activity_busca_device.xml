@@ -100,28 +100,35 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_alignWithParentIfMissing="true"
-        android:layout_below="@+id/editText4"
-        android:layout_centerHorizontal="true"
-        android:layout_centerInParent="true"
-        android:layout_centerVertical="true"
         android:layout_marginTop="30dp"
         android:background="@drawable/butons"
         android:gravity="center_vertical|center"
         android:text="Buscar"
-        android:textColor="@color/cardview_light_background" />
+        android:textColor="@color/cardview_light_background"
+        android:layout_below="@+id/editText4"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView17"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/textView17"
         android:layout_centerHorizontal="true"
         android:layout_centerInParent="true"
         android:layout_centerVertical="true"
-        android:layout_marginBottom="25dp"
+        android:layout_marginBottom="23dp"
         android:background="@drawable/butons"
+        android:gravity="center"
         android:text="Buscar Todos"
         android:textColor="@color/cardview_light_background" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:text="Relatorios/Gateway/Relatorio-Devices/Busca"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

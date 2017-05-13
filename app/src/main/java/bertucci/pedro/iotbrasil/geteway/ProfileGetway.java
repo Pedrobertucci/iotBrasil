@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 
 import bertucci.pedro.iotbrasil.Canal.MainCanal;
+import bertucci.pedro.iotbrasil.Devices.MainAddDevice;
 import bertucci.pedro.iotbrasil.Devices.MainDevices;
 import bertucci.pedro.iotbrasil.R;
 import bertucci.pedro.iotbrasil.Sms.MainSms;
@@ -56,7 +57,7 @@ public class ProfileGetway extends AppCompatActivity {
         btnDevice.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent it = new Intent(ProfileGetway.this,MainDevices.class);
+                Intent it = new Intent(ProfileGetway.this,MainAddDevice.class);
                 startActivity(it);
             }
         });

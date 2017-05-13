@@ -9,67 +9,97 @@
     <Button
         android:id="@+id/btnGeteway2"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/btnGateway1"
+        android:layout_alignLeft="@+id/btnGateway1"
+        android:layout_alignRight="@+id/btnGateway1"
+        android:layout_alignStart="@+id/btnGateway1"
+        android:layout_below="@+id/btnGateway1"
+        android:layout_marginTop="10dp"
         android:background="@drawable/butons"
         android:text="GATEWAY 2"
         android:textColor="@color/cardview_light_background"
-        android:textSize="30sp"
-        android:layout_below="@+id/btnGateway1"
-        android:layout_alignLeft="@+id/btnGateway1"
-        android:layout_alignStart="@+id/btnGateway1"
-        android:layout_marginTop="32dp"
-        android:layout_alignRight="@+id/btnGateway1"
-        android:layout_alignEnd="@+id/btnGateway1" />
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/btnGateway1"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_below="@+id/textView3"
-        android:layout_centerHorizontal="true"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="150dp"
+        android:layout_height="50dp"
         android:background="@drawable/butons"
         android:text="GATEWAY 1"
         android:textColor="@color/cardview_light_background"
-        android:textSize="30sp" />
+        android:textSize="20sp"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignLeft="@+id/btnGateway3"
+        android:layout_alignStart="@+id/btnGateway3"
+        android:layout_alignRight="@+id/btnGateway3"
+        android:layout_alignEnd="@+id/btnGateway3" />
 
     <Button
         android:id="@+id/btnGateway4"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_alignEnd="@+id/btnGateway3"
-        android:layout_alignLeft="@+id/btnGateway3"
-        android:layout_alignRight="@+id/btnGateway3"
-        android:layout_alignStart="@+id/btnGateway3"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_below="@+id/btnGateway3"
-        android:layout_marginTop="27dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/butons"
         android:text="GATEWAY 4"
         android:textColor="@color/cardview_light_background"
-        android:textSize="30sp" />
+        android:textSize="20sp"
+        android:layout_alignLeft="@+id/btnGateway3"
+        android:layout_alignStart="@+id/btnGateway3" />
 
     <Button
         android:id="@+id/btnGateway3"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="22dp"
+        android:layout_height="50dp"
         android:background="@drawable/butons"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
         android:text="GATEWAY 3"
         android:textColor="@color/cardview_light_background"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:layout_below="@+id/btnGeteway2"
-        android:layout_alignLeft="@+id/btnGeteway2"
-        android:layout_alignStart="@+id/btnGeteway2"
-        android:layout_alignRight="@+id/btnGeteway2"
-        android:layout_alignEnd="@+id/btnGeteway2" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/btnGateway4"
+        android:layout_alignLeft="@+id/btnGateway4"
+        android:layout_alignRight="@+id/btnGateway4"
+        android:layout_alignStart="@+id/btnGateway4"
+        android:layout_below="@+id/btnGateway4"
+
+        android:layout_marginTop="39dp"
+        android:background="@drawable/butons"
+        android:text="atualizar"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="10dp"
+        android:text="Configurações/Gateway" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/imageView2"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        app:srcCompat="@drawable/logo"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        app:srcCompat="@drawable/logo" />
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
