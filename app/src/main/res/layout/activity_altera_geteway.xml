@@ -17,7 +17,7 @@
         android:layout_centerHorizontal="true" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/edtNome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -29,11 +29,11 @@
         android:layout_marginRight="25dp"
         android:layout_marginTop="57dp"
         android:ems="10"
-        android:hint="digite o novo nome"
+        android:hint="Digite o novo nome"
         android:inputType="textPersonName" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnAlteraGateway"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:background="@drawable/butons"
@@ -58,10 +58,24 @@
         android:id="@+id/checkBox8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText"
+        android:layout_below="@+id/edtNome"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="77dp"
         android:text="Apagar Gateway"
         android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/edtNumero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtNome"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:layout_alignRight="@+id/edtNome"
+        android:layout_alignEnd="@+id/edtNome"
+        android:layout_alignLeft="@+id/edtNome"
+        android:layout_alignStart="@+id/edtNome"
+        android:hint="Digite o Numero"/>
 
 </RelativeLayout>

@@ -109,7 +109,7 @@
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnCanalSalvarEnviar"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

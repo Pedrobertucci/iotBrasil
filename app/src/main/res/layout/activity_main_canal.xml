@@ -17,60 +17,60 @@
         android:text="Configurações/Gateway/Configuracoes-gateway/Canal" />
 
     <CheckBox
-        android:id="@+id/checkBox4"
+        android:id="@+id/checkCanal1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="66dp"
+        android:layout_marginTop="49dp"
         android:text="Canal 01 - 905.5 Mhz."
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:layout_below="@+id/textView21"
+        android:layout_centerHorizontal="true" />
 
     <CheckBox
-        android:id="@+id/checkBox7"
+        android:id="@+id/checkCanal2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/checkBox4"
-        android:layout_alignStart="@+id/checkBox4"
-        android:layout_below="@+id/checkBox4"
+        android:layout_alignLeft="@+id/checkCanal1"
+        android:layout_alignStart="@+id/checkCanal1"
+        android:layout_below="@+id/checkCanal1"
         android:layout_marginTop="24dp"
         android:text="Canal 02 - 905.9 Mhz."
         android:textSize="24sp" />
 
     <CheckBox
-        android:id="@+id/checkBox6"
+        android:id="@+id/checkCanal3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/checkBox7"
-        android:layout_alignStart="@+id/checkBox7"
-        android:layout_below="@+id/checkBox7"
+        android:layout_alignLeft="@+id/checkCanal2"
+        android:layout_alignStart="@+id/checkCanal2"
+        android:layout_below="@+id/checkCanal2"
         android:layout_marginTop="34dp"
         android:text="Canal 03 - 906.3 Mhz."
         android:textSize="24sp" />
 
     <CheckBox
-        android:id="@+id/checkBox5"
+        android:id="@+id/checkCanal4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/checkBox6"
-        android:layout_alignStart="@+id/checkBox6"
-        android:layout_below="@+id/checkBox6"
+        android:layout_alignLeft="@+id/checkCanal3"
+        android:layout_alignStart="@+id/checkCanal3"
+        android:layout_below="@+id/checkCanal3"
         android:layout_marginTop="36dp"
         android:text="Canal 04 - 906.7 Mhz."
         android:textSize="24sp" />
 
     <CheckBox
-        android:id="@+id/checkBox16"
+        android:id="@+id/checkApagaCanal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/checkCanal4"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="33dp"
         android:text="Apagar Canal"
-        android:textSize="24sp"
-        android:layout_below="@+id/checkBox5"
-        android:layout_centerHorizontal="true" />
+        android:textSize="24sp" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnCanalSalvarEnviar"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

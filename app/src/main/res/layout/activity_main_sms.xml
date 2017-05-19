@@ -7,7 +7,7 @@
     tools:context="bertucci.pedro.iotbrasil.Sms.MainSms">
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/checkTcp01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -18,7 +18,7 @@
         android:layout_centerHorizontal="true" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/checkTcp02"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
@@ -26,8 +26,8 @@
         android:textSize="28sp"
         android:layout_marginTop="13dp"
         android:layout_below="@+id/edtTcp1"
-        android:layout_alignLeft="@+id/checkBox"
-        android:layout_alignStart="@+id/checkBox" />
+        android:layout_alignLeft="@+id/checkTcp01"
+        android:layout_alignStart="@+id/checkTcp01" />
 
     <CheckBox
         android:id="@+id/checkBox3"
@@ -49,9 +49,9 @@
         android:ems="11"
         android:inputType="phone"
         android:maxLength="16"
-        android:layout_below="@+id/checkBox2"
-        android:layout_alignRight="@+id/checkBox2"
-        android:layout_alignEnd="@+id/checkBox2" />
+        android:layout_below="@+id/checkTcp02"
+        android:layout_alignRight="@+id/checkTcp02"
+        android:layout_alignEnd="@+id/checkTcp02" />
 
     <EditText
         android:id="@+id/edtTcp1"
@@ -61,8 +61,8 @@
         android:inputType="phone"
         android:maxLength="16"
         android:layout_below="@+id/checkBox10"
-        android:layout_alignLeft="@+id/checkBox2"
-        android:layout_alignStart="@+id/checkBox2"
+        android:layout_alignLeft="@+id/checkTcp02"
+        android:layout_alignStart="@+id/checkTcp02"
         android:layout_marginTop="11dp" />
 
     <EditText
@@ -78,7 +78,7 @@
         android:layout_alignStart="@+id/edtTcp1" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnSalvaSms"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
@@ -104,10 +104,10 @@
         android:layout_height="wrap_content"
         android:text="Apagar SMS 03"
         android:textSize="24sp"
+        android:layout_marginTop="13dp"
         android:layout_below="@+id/checkBox3"
-        android:layout_alignLeft="@+id/button2"
-        android:layout_alignStart="@+id/button2"
-        android:layout_marginTop="13dp" />
+        android:layout_alignRight="@+id/btnSalvaSms"
+        android:layout_alignEnd="@+id/btnSalvaSms" />
 
     <CheckBox
         android:id="@+id/checkBox10"
@@ -115,7 +115,7 @@
         android:layout_height="wrap_content"
         android:text="Apagar Sms 01"
         android:textSize="24sp"
-        android:layout_below="@+id/checkBox"
+        android:layout_below="@+id/checkTcp01"
         android:layout_alignLeft="@+id/checkBox9"
         android:layout_alignStart="@+id/checkBox9"
         android:layout_marginTop="11dp" />
@@ -126,7 +126,7 @@
         android:layout_height="wrap_content"
         android:text="Apagar Sms 02"
         android:textSize="24sp"
-        android:layout_below="@+id/checkBox2"
+        android:layout_below="@+id/checkTcp02"
         android:layout_alignLeft="@+id/checkBox9"
         android:layout_alignStart="@+id/checkBox9" />
 
