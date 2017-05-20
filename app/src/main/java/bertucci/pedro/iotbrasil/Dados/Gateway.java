@@ -6,9 +6,16 @@ package bertucci.pedro.iotbrasil.Dados;
 
 public class Gateway {
 
+    private int id_gateway;
     private String nome;
     private String telefone;
 
+    public int getId_gateway() {    return id_gateway;
+    }
+
+    public void setId_gateway(int id_gateway) {
+        this.id_gateway = id_gateway;
+    }
     public String getNome() {
         return nome;
     }
@@ -23,5 +30,15 @@ public class Gateway {
 
     public void setTelefone(String telefone) {
         this.telefone = telefone;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Gateway{" +
+                "id_gateway=" + id_gateway +
+                ", nome='" + nome + '\'' +
+                ", telefone='" + telefone + '\'' +
+                '}';
     }
 }
