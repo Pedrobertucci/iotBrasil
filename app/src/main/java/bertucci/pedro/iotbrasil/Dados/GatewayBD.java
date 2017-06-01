@@ -29,6 +29,13 @@ public class GatewayBD {
 
     }
 
+
+    public void inserirSms(Gateway gateway) throws Exception{
+        ContentValues valores = new ContentValues();
+
+
+    }
+
     public String listar(){
 
         List <Gateway> list = new ArrayList<>();
@@ -41,7 +48,6 @@ public class GatewayBD {
             cursor.moveToFirst();
 
             do{
-
                 return cursor.getString(cursor.getColumnIndex("telefone"));
 
             }while (cursor.moveToNext());

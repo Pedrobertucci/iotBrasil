@@ -73,9 +73,10 @@
         android:inputType="phone"
         android:maxLength="16"
         android:layout_marginBottom="10dp"
-        android:layout_above="@+id/button2"
-        android:layout_alignLeft="@+id/edtTcp1"
-        android:layout_alignStart="@+id/edtTcp1" />
+
+        android:layout_above="@+id/btnSalvaSms"
+        android:layout_alignLeft="@+id/checkTcp02"
+        android:layout_alignStart="@+id/checkTcp02" />
 
     <Button
         android:id="@+id/btnSalvaSms"

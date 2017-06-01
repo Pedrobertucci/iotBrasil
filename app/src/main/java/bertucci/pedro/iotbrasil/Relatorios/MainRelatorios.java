@@ -11,7 +11,6 @@ import android.view.View;
 import java.util.ArrayList;
 
 import bertucci.pedro.iotbrasil.R;
-import bertucci.pedro.iotbrasil.geteway.GetwayAdapter;
 
 public class MainRelatorios extends AppCompatActivity {
 

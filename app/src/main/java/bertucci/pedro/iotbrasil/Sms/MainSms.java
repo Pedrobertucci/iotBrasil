@@ -37,7 +37,7 @@ public class MainSms extends AppCompatActivity {
         btnEnvia = (Button)findViewById(R.id.btnSalvaSms);
 
         db = new GatewayBD(this);
-        telefone = db.listar();
+
 
         btnEnvia.setOnClickListener(new View.OnClickListener() {
             @Override

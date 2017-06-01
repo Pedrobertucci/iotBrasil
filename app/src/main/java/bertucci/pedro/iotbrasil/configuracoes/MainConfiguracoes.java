@@ -11,6 +11,8 @@ import bertucci.pedro.iotbrasil.geteway.ProfileGetway;
 
 public class MainConfiguracoes extends AppCompatActivity {
 
+    String gateway1,gateway2, gateway3, gateway4;
+
 
     Button btnGateway, btnGateway2,btnGateway3,btnGateway4;
     @Override

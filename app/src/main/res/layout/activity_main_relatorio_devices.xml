@@ -27,14 +27,6 @@
         android:layout_below="@+id/textView7"
         android:layout_centerHorizontal="true" />
 
-    <ListView
-        android:id="@+id/lista"
-        android:layout_width="match_parent"
-        android:layout_height="350dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
-
     <TextView
         android:id="@+id/textView30"
         android:layout_width="wrap_content"
@@ -44,4 +36,14 @@
         android:layout_alignParentTop="true"
         android:paddingLeft="10dp"
         android:text="Relatorios/Gateway/Relatorios-Devices" />
+
+    <TextView
+        android:id="@+id/txtDevices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView9"
+        android:layout_marginTop="35dp"
+        android:text="TextView" />
 </RelativeLayout>
